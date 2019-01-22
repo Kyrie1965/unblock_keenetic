@@ -50,6 +50,19 @@ then
   unblock_update.sh
 fi
 
+rm -rf /opt/etc/ndm/fs.d/100-ipset.sh
+rm -rf /opt/etc/tor/torrc
+rm -rf /opt/etc/unblock.txt
+rm -rf /opt/etc/unblock.dnsmasq
+rm -rf /opt/bin/unblock_ipset.sh
+rm -rf /opt/bin/unblock_dnsmasq.sh
+rm -rf /opt/bin/unblock_update.sh
+rm -rf /opt/etc/init.d/S99unblock
+rm -rf /opt/etc/ndm/netfilter.d/100-redirect.sh
+rm -rf /opt/etc/dnsmasq.conf
+rm -rf /opt/etc/crontab
+rm -rf /opt/etc/dnscrypt-proxy.toml
+  
 opkg update
 opkg install mc tor tor-geoip bind-dig cron dnsmasq-full ipset iptables 
 
