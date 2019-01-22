@@ -48,6 +48,8 @@ then
   chmod +x /opt/bin/unblock_dnsmasq.sh
   
   unblock_update.sh
+  
+  exit 0
 fi
 
 rm -rf /opt/etc/ndm/fs.d/100-ipset.sh
