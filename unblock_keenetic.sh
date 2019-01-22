@@ -69,12 +69,12 @@ rm -rf /opt/etc/dnscrypt-proxy.toml
 opkg update
 opkg install mc tor tor-geoip bind-dig cron dnsmasq-full ipset iptables 
 
-set_type = "hash:net"
+set_type="hash:net"
 
 ipset create testset hash:net -exist > /dev/null 2>&1
 retVal=$?
 if [ $retVal -ne 0 ]; then
-  set_type = "hash:ip"
+  set_type="hash:ip"
 fi
 
 lanip=$(ndmq -p 'show interface Bridge0' -P address)
