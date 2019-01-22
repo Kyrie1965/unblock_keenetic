@@ -32,6 +32,7 @@ then
     exit 0
   fi
   
+  opkg update
   opkg install dnscrypt-proxy2
   
   rm -rf /opt/etc/dnscrypt-proxy.toml
