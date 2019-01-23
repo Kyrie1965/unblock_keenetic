@@ -1,0 +1,13 @@
+SHELL=/bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/opt/bin:/opt/sbin
+MAILTO=""
+HOME=/
+# ---------- ---------- Default is Empty ---------- ---------- #
+#*/1 * * * * admin /opt/bin/run-parts /opt/etc/cron.1min	
+#*/5 * * * * admin /opt/bin/run-parts /opt/etc/cron.5mins	
+#01 * * * * admin /opt/bin/run-parts /opt/etc/cron.hourly	
+#02 4 * * * admin /opt/bin/run-parts /opt/etc/cron.daily	
+#22 4 * * 0 admin /opt/bin/run-parts /opt/etc/cron.weekly	
+#42 4 1 * * admin /opt/bin/run-parts /opt/etc/cron.monthly	
+00 06 * * * admin /opt/bin/unblock_ipset.sh
+
