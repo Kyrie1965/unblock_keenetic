@@ -26,24 +26,10 @@ unblock_keenetic.sh remove
 
 Аналогичный скрипт для Padavan. ВНИМАНИЕ! Скрипт пока тоже не проверялся на реальном устройстве. Только для экспериментаторов. Все остальные должны использовать ручной метод установки, описанный в статье.
 
-Загрузите скрипт установки:
+Загрузка скрипта:
 ```bash
 opkg install wget ca-certificates
 wget --no-check-certificate -O /opt/bin/unblock_keenetic.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock_padavan.sh
 chmod +x /opt/bin/unblock_padavan.sh
 ```
 
-Установка (автоматическое выполнение шагов 1-12):
-```bash
-unblock_padavan.sh
-```
-
-После автоматической перезагрузки маршрутизатора для реализации «Дополнительный обход фильтрации DNS-запросов провайдером» (если вам это нужно) выполните команду:
-```bash
-unblock_padavan.sh dnscrypt
-```
-
-Удаление обхода блокировок:
-```bash
-unblock_padavan.sh remove
-```
