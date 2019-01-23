@@ -31,7 +31,7 @@ fi
 if [ "$1" == "dnscrypt" ]
 then
   if [ ! -f /opt/etc/init.d/S99unblock ]; then
-    echo "Ошибка! Основной метод обхода блокировок не реализован в системе. Запустите unblock_keenetic/padavan.sh без параметров."
+    echo "Ошибка! Основной метод обхода блокировок не реализован в системе. Запустите unblock_padavan.sh без параметров."
     exit 0
   fi
   
