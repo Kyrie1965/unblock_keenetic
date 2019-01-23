@@ -39,16 +39,16 @@ then
   opkg install dnscrypt-proxy2
   
   rm -rf /opt/etc/dnscrypt-proxy.toml
-  wget --no-check-certificate -O /opt/etc/dnscrypt-proxy.toml https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/dnscrypt-proxy.toml
+  wget --no-check-certificate -O /opt/etc/dnscrypt-proxy.toml https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/dnscrypt-proxy.toml
   
   /opt/etc/init.d/S09dnscrypt-proxy2 start
   
   rm -rf /opt/bin/unblock_ipset.sh
-  wget --no-check-certificate -O /opt/bin/unblock_ipset.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/unblock_ipset_dnscrypt.sh
+  wget --no-check-certificate -O /opt/bin/unblock_ipset.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock_ipset_dnscrypt.sh
   chmod +x /opt/bin/unblock_ipset.sh
   
   rm -rf /opt/bin/unblock_dnsmasq.sh
-  wget --no-check-certificate -O /opt/bin/unblock_dnsmasq.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/unblock_dnsmasq_dnscrypt.sh
+  wget --no-check-certificate -O /opt/bin/unblock_dnsmasq.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock_dnsmasq_dnscrypt.sh
   chmod +x /opt/bin/unblock_dnsmasq.sh
   
   unblock_update.sh
@@ -91,22 +91,22 @@ echo "modprobe xt_set" >> /etc/storage/start_script.sh
 echo "ipset create unblock hash:net" >> /etc/storage/start_script.sh
 
 rm -rf /opt/etc/tor/torrc
-wget --no-check-certificate -O /opt/etc/tor/torrc https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/torrc
+wget --no-check-certificate -O /opt/etc/tor/torrc https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/torrc
 sed -i "s/192.168.1.1/${lanip}/g" /opt/etc/tor/torrc
 
-wget --no-check-certificate -O /opt/etc/unblock.txt https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/unblock.txt
+wget --no-check-certificate -O /opt/etc/unblock.txt https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock.txt
 
-wget --no-check-certificate -O /opt/bin/unblock_ipset.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/unblock_ipset.sh
+wget --no-check-certificate -O /opt/bin/unblock_ipset.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock_ipset.sh
 chmod +x /opt/bin/unblock_ipset.sh
 
-wget --no-check-certificate -O /opt/bin/unblock_dnsmasq.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/unblock_dnsmasq.sh
+wget --no-check-certificate -O /opt/bin/unblock_dnsmasq.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock_dnsmasq.sh
 chmod +x /opt/bin/unblock_dnsmasq.sh
 unblock_dnsmasq.sh
 
-wget --no-check-certificate -O /opt/bin/unblock_update.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/unblock_update.sh
+wget --no-check-certificate -O /opt/bin/unblock_update.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock_update.sh
 chmod +x /opt/bin/unblock_update.sh
 
-wget --no-check-certificate -O /opt/etc/init.d/S99unblock https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/S99unblock
+wget --no-check-certificate -O /opt/etc/init.d/S99unblock https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/S99unblock
 chmod +x /opt/etc/init.d/S99unblock
 
 echo "" >> /etc/storage/post_iptables_script.sh
@@ -119,6 +119,6 @@ echo "conf-file=/opt/etc/unblock.dnsmasq" >> /etc/storage/dnsmasq/dnsmasq.conf
 echo "server=8.8.8.8" >> /etc/storage/dnsmasq/dnsmasq.conf
 
 rm -rf /opt/etc/crontab
-wget --no-check-certificate -O /opt/etc/crontab https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/padavan/master/crontab
+wget --no-check-certificate -O /opt/etc/crontab https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/crontab
 
 reboot
