@@ -29,7 +29,7 @@ unblock_keenetic.sh remove
 Загрузка скрипта:
 ```bash
 opkg install wget ca-certificates
-wget --no-check-certificate -O /opt/bin/unblock_keenetic.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock_padavan.sh
+wget --no-check-certificate -O /opt/bin/unblock_padavan.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/padavan/unblock_padavan.sh
 chmod +x /opt/bin/unblock_padavan.sh
 ```
 
