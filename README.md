@@ -1,5 +1,7 @@
 Автоматическая установка для выборочного обхода блокировок на маршрутизаторах с прошивкой Keenetic OS. Подробности читайте в статье "Выборочный обход блокировок на маршрутизаторах с прошивкой Padavan и Keenetic OS" — https://habr.com/ru/post/428992/.
 
+ВНИМАНИЯ! Скрипт не проверялся на реальном устройстве (пока не было времени). Только для экспериментаторов. Все остальные должны использовать ручной метод установки, описанный в статье.
+
 Загрузите скрипт установки:
 ```bash
 opkg install wget ca-certificates wget --no-check-certificate -O /opt/bin/unblock_keenetic.sh https://raw.githubusercontent.com/Kyrie1965/unblock_keenetic/master/unblock_keenetic.sh
