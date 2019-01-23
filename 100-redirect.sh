@@ -1,6 +1,7 @@
 #!/bin/sh
 
 [ "$type" == "ip6tables" ] && exit 0
+[ "$table" != "nat" ] && exit 0
 
 if [ -z "$(iptables-save 2>/dev/null | grep unblock)" ]; then
     iptables -w -t nat -A PREROUTING -i br0 -p tcp -m set --match-set unblock dst -j REDIRECT --to-port 9141
