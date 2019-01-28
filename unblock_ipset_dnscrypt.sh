@@ -14,6 +14,13 @@ while read line || [ -n "$line" ]; do
     continue
   fi
   
+  range=$(echo $line | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}-[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')
+
+  if [ ! -z "$range" ]; then
+    ipset -exist add unblock $range
+    continue
+  fi
+  
   addr=$(echo $line | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')
 
   if [ ! -z "$addr" ]; then
