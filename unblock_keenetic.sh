@@ -120,6 +120,6 @@ ndmq -p 'opkg dns-override'
 ndmq -p 'system configuration save'
 ndmq -p 'system reboot'
 
-sleep 3
+sleep 5
 
 exit 0
