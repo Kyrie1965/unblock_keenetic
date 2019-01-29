@@ -119,3 +119,7 @@ wget --no-check-certificate -O /opt/etc/crontab https://raw.githubusercontent.co
 ndmq -p 'opkg dns-override'
 ndmq -p 'system configuration save'
 ndmq -p 'system reboot'
+
+sleep 3
+
+exit 0
