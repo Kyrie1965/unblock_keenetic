@@ -18,10 +18,12 @@ uniongang.tv
 fast-torrent.ru
 
 ###Каталоги медиаконтента для программ
+rezka.ag
 hdrezka.ag
 hdrezka.me
 filmix.co
 filmix.cc
+seasonvar.ru
 
 ###Книги
 lib.rus.ec
@@ -59,24 +61,18 @@ aurora.web.telegram.org
 149.154.168.0/22
 
 ###Разное
-crimerussia.com
+edem.tv
 4pna.com
 2019.vote
-7-zip.org
-edem.tv
-grani.ru
-git.openwrt.org
-nextcloud.com
-gnome-look.org
 
 ###Проверка Tor
 check.torproject.org
 
 ###Пример разблокировки по IP (убрать # в начале строки)
-#199.199.199.199
+#195.82.146.214
 
 ###Пример разблокировки по CIDR (убрать # в начале строки)
-#103.21.244.0/30
+#103.21.244.0/22
 
 ###Пример разблокировки по диапазону (убрать # в начале строки)
 #100.100.100.200-100.100.100.210
